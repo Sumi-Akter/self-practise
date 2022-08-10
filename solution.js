@@ -324,6 +324,50 @@ console.log(areaOfCircle(4));
 
 
 
+// Write a function that takes input the total price of the products you bought and returns the net price calculated according to the discount table below.
+// Total Price
+// Discount
+// >= 1000
+// 10%
+// >= 3000
+// 15%
+// > 5000
+// 20%
+// function discountCalculate(totalCost){
+//     if(totalCost>=5000){
+//         const discountPrice=totalCost*(20/100);
+//         const netPrice=totalCost-discountPrice
+//         console.log(netPrice);
+//     }
+//     else   if(totalCost>=3000){
+//         const discountPrice=totalCost*(15/100);
+//         const netPrice=totalCost-discountPrice;
+//         console.log(netPrice);
+//     }
+//     else   if(totalCost>=1000){
+//         const discountPrice=totalCost*(5/100);
+//         const netPrice=totalCost-discountPrice;
+//         console.log(netPrice);
+//     }
+//     else{
+//         console.log('nothing');
+//     }
+// }
+// discountCalculate(1700); wrong..............
+// Write a function that will take a year as a input parameter and will check the year is leap year or not
+function isLeapYear(year){
+    if((year%4==0) && (year100==0) || (year%400==0)){
+        return 'Leapyear';
+    }
+    else{
+        return 'not Leapyear';
+    }
+}
+console.log(isLeapYear(2026));
+
+
+
+
 
 
 
