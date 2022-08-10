@@ -385,6 +385,14 @@ function oddEvenSum(arr){
 const arr=[1,2,5,8,4,9,12];
 (oddEvenSum(arr));
 
+// Write a function that will take a number and will check the number is positive or negative.
+// Write a JavaScript function that accepts a number as a parameter and check the number is prime or not.
+// Write a function named findArea() that will take base and height of a triangle and will return the area of triangle.
+// Write a function named findArea() that will take height and width of a rectangle and will return the area of rectangle.
+// Write a function which will take an integer and will return the square of a number.
+// Write a function that will taka an array and calculate the sum of odd numbers greater than 10 and less than 50
+
+
 
 
 
@@ -399,4 +407,67 @@ const arr=[1,2,5,8,4,9,12];
 
 
 
+// ১. সিম্পল একটা ফাংশন লিখতে হবে। যেটার নাম হবে feetToInch এবং এই ফাংশন ইনপুট হিসেবে নিবে feet আর রিটার্ন করবে inch । অর্থাৎ এই ফাংশনকে কোন একটা ফিট বলে দিলে সে রিটার্ন হিসেবে বলে দিবে কত ইঞ্চি হয়। 
+
+
+function feetToInch(feet) {
+    const inchValuee=feet*12;
+    return inchValuee;
+
+}
+const resuulltt=feetToInch(20);
+console.log(resuulltt);
+
+// ২. একদম ফাংশন এর নাম হুবহু centimeterToMeter নাম দিয়ে একটা ফাংশন লিখবে। এই ফাংশনে ইনপুট হিসাবে কেউ সেন্টিমিটার দিবে আর সেই সেন্টিমিটার কে মিটার এ কনভার্ট করে রেজাল্ট রিটার্ন করবে। 
+
+function centimeterToMeter(cm){
+    const MeterResult=cm/100;
+    return MeterResult;
+
+}
+const Convert=centimeterToMeter(500);
+console.log(Convert);
+
+
+
+// ৩. আরেকটা ফাংশন লিখবে যেটার নাম লিখবে। যেই ফাংশনের নাম হবে paperRequirements এই ফাংশনের প্যারামিটার হিসেবে তিনটা প্যারামিটার হবে। প্রথম প্যারামিটার হবে তুমি প্রথম বই কত কপি ছাপাতে চাও। সেকেন্ড প্যারামিটার হবে তুমি সেকেন্ড বই কত কপি ছাপাতে চাও। আর থার্ড প্যারামিটার হবে তুমি থার্ড বই কত কপি ছাপাতে চাও। অর্থাৎ কোন বই এর কত কপি ছাপানো হবে সেটাই প্যারামিটার হিসেবে নিবে। 
+
+// এইবার ভালো করে খেয়াল করো। 
+
+// প্রথম বই ছাপানোর জন্য পৃষ্ঠা লাগবে ১০০ টা 
+
+// সেকেন্ড বই ছাপানোর জন্য পৃষ্ঠা লাগবে ২০০ টা 
+
+// তৃতীয় বই ছাপানোর জন্য পৃষ্ঠা লাগবে ৩০০ টা 
+
+
+
+// এখন তোমার কাজ হচ্ছে paperRequirements নামক ফাংশন লিখে ফেলা যাতে। সেই ফাংশনকে কল করে কোন বই এর কত কপি লাগবে বলে দিবে প্যারামিটার হিসেবে। আর ফাংশন হিসাব করে বলে দিবে তোমার সর্বমোট কতপৃষ্ঠা কাগজ লাগবে। 
+
+// উত্তর হিসেবে সংখ্যা রিটার্ন করবে।
+
+function paperRequirements(needPage1,needPage2,needPage3){
+    const calculation=needPage1+needPage2+needPage3;
+    return calculation;
+}
+
+console.log( paperRequirements(100,200,300));
+
+
+// ৪. একটা ফাংশন লিখবে। এই ফাংশনের নাম হবে bestFriend তারপর সেই ফাংশনে ইনপুট প্যারামিটার হিসেবে একটা array নিবে। সেই array এর মধ্যে তোমার সব ফ্রেন্ডের নাম থাকবে। এখন তোমার কাজ হচ্ছে যে ফ্রেন্ড এর নাম সবচেয়ে বড় সেই ফ্রেন্ড এর নাম রিটার্ন করে দেয়া। এই ক্ষেত্রে তুমি নামটা অর্থাৎ ফ্রেন্ডের নাম (স্ট্রিং) রিটার্ন করতে হবে। 
+
+function bestFriend(arr){
+    let max_str = arr[0].length;
+    let ans = arr[0];
+    for (var i = 1; i < arr.length; i++) {
+        var maxi = arr[i].length;
+        if (maxi > max_str) {
+            ans = arr[i];
+            max_str = maxi;
+        }
+    }
+
+        return ans;
+    }
+    console.log(bestFriend(["sudepta", "tanvir", "FaridaYesmin","shahadat"]));
 
