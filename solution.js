@@ -368,6 +368,27 @@ console.log(isLeapYear(2026));
 
 
 
+// Write a function that will take an array and will return odd sum and even sum.
+function oddEvenSum(arr){
+    let evenSum=0;
+    let oddSum=0;
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]%2==0){
+            evenSum=evenSum+arr[i];
+        }
+        else{
+            oddSum=oddSum+arr[i];
+        }
+    }
+    console.log(evenSum,oddSum);
+}
+const arr=[1,2,5,8,4,9,12];
+(oddEvenSum(arr));
+
+
+
+
+
 
 
 
